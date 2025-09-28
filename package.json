@@ -1,0 +1,28 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "Учбовий репозиторій для практики роботи з Git та TypeScript. Має дві основні гілки: `main` (стабільна) та `develop` (робоча).",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node ./dist/index.js",
+    "dev": "ts-node-dev --respawn --pretty src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SashaPom/TypeScriptUniversity.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SashaPom/TypeScriptUniversity/issues"
+  },
+  "homepage": "https://github.com/SashaPom/TypeScriptUniversity#readme",
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  }
+}
