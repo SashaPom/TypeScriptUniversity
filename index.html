@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TS Practical 2</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<header class="hero">
+    <h1>TypeScript Practical 2</h1>
+    <button id="openModalBtn" class="btn">Відкрити модалку</button>
+</header>
+
+<main class="container">
+    <section>
+        <h2>Пости з JSONPlaceholder</h2>
+        <button id="loadPostsBtn" class="btn btn-secondary">Завантажити пости</button>
+        <ul id="posts" class="posts"></ul>
+    </section>
+</main>
+
+<button id="toTopBtn" class="to-top hidden">↑</button>
+
+<!-- Модальне вікно -->
+<div id="modal" class="modal hidden">
+    <div class="modal__content pop-in">
+        <h3>Привіт 👋</h3>
+        <p>Це модальне вікно, відкрите з TypeScript.</p>
+        <button id="closeModalBtn" class="btn">Закрити</button>
+    </div>
+    <div id="modalBackdrop" class="modal__backdrop"></div>
+</div>
+
+<script defer src="./dist/main.js"></script>
+</body>
+</html>
